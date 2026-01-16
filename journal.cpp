@@ -8,12 +8,8 @@ using namespace std;
 fstream entry("C:\\Users\\user\\Desktop\\PROJEKTY\\CPP\\journal\\journal\\entries.txt", fstream::app);
 fstream editing("C:\\Users\\user\\Desktop\\PROJEKTY\\CPP\\journal\\journal\\entries.txt");
 fstream key("C:\\Users\\user\\Desktop\\PROJEKTY\\CPP\\journal\\journal\\entry_key.txt", fstream::app);
-<<<<<<< HEAD
-string login()
-=======
 fstream key_read("C:\\Users\\user\\Desktop\\PROJEKTY\\CPP\\journal\\journal\\entry_key.txt");
 string login() 
->>>>>>> 40107b0f24d896f0b814b390fcd354a280ec9090
 {
 	system("CLS");
 	string enter = "";
@@ -36,9 +32,6 @@ int menu()
 	cin >> user_choice;
 	return user_choice;
 }
-<<<<<<< HEAD
-void new_entry()
-=======
 string entry_part(int decide) 
 {
 	system("CLS");
@@ -52,43 +45,16 @@ string entry_part(int decide)
 	return note;
 }
 string read(int part, string look) 
->>>>>>> 40107b0f24d896f0b814b390fcd354a280ec9090
 {
 	system("CLS");
 	cin.ignore();
-<<<<<<< HEAD
-	getline(cin, write);
-	if (write == "X" || write == "x")
-=======
 	string lines = "";
 	if (part == 1)
->>>>>>> 40107b0f24d896f0b814b390fcd354a280ec9090
 	{
 		cout << "Your previous entries:" << endl;
 		while (getline(key_read, lines))
 			cout << lines << endl;
 	}
-<<<<<<< HEAD
-	else
-	{
-		key << write << endl;
-		entry << write << endl;
-	}
-	system("CLS");
-	string note;
-	cout << "to cancel enter X" << endl;
-	cout << "begin your entry:" << endl;
-	getline(cin, note);
-	if (note == "X" || note == "x")
-	{
-		menu();
-	}
-	else
-	{
-		entry << note << endl;
-	}
-	entry << " " << endl;
-=======
 	
 	else 
 	{
@@ -110,7 +76,6 @@ string read(int part, string look)
 		}
 	}
 	return "";
->>>>>>> 40107b0f24d896f0b814b390fcd354a280ec9090
 }
 void helper() 
 {
